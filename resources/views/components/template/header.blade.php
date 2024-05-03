@@ -75,6 +75,10 @@
         }
 
     }
+
+    .barra__contenido{
+        font-size: clamp(20px, 3vw, 30px);
+    }
 </style>
 
 
@@ -125,3 +129,33 @@
 
     </div>
 </header>
+
+<div class="flex justify-between container mx-auto h-fit">
+    <div class="flex-col md:flex-row flex justify-between bg-blue-700 w-full px-4 ">
+        <!-- Logo -->
+        <div class="shrink-0 flex justify-center items-center md:items-center text-white text-3xl font-bold">
+            <a href="{{ route('dashboard') }}" class="barra__contenido">
+                <x-application-mark class="block h-9 w-auto" />
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex sm:flex-col md:flex-row ">
+            <x-nav-link class="text-white text-xl" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Evento') }}
+            </x-nav-link>
+            <x-nav-link class="text-white text-xl" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Paquetes') }}
+            </x-nav-link>
+            <x-nav-link class="text-white text-xl" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Workshops / Conferencias') }}
+            </x-nav-link>
+            <x-nav-link class="text-white text-xl" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Comprar Pases') }}
+            </x-nav-link>
+            <x-nav-link class="text-white text-xl" href="{{ route('register') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Dashboard') }}
+            </x-nav-link>
+        </div>
+    </div>
+</div>
