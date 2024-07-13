@@ -16,7 +16,7 @@
 
         <div class="bloque">
             <h3 class="bloque__heading">Ingresos</h3>
-            <p class="bloque__texto--cantidad">$ <?php echo $ingresos; ?></p>
+            <p class="bloque__texto--cantidad">Є <?php echo $ingresos; ?></p>
         </div>
 
         <div class="bloque">

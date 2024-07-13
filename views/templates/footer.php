@@ -6,7 +6,7 @@
             </h3>
 
             <p class="footer__texto">
-            OpenWebCongress es una conferencia para desarrolladores de todos los niveles, donde se discuten puntos de los diferentes herramientas para desarrollar App's y páginas Web; este acto se lleva a cabo de forma presencial y en línea.
+            OpenWebCongress es una plataforma para conferencia de desarrolladores de todos los niveles, donde se discuten puntos de los diferentes herramientas para desarrollar App's y páginas Web; este acto se lleva a cabo de forma presencial y en línea.
             </p>
         </div>
 
